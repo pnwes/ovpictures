@@ -1,0 +1,131 @@
+body {
+    font-size: 1.2em;
+    background-color: antiquewhite;
+  }
+  
+  #app {
+    width: 90%;
+    margin: auto;
+  }
+  
+  
+  .grid {
+    display: grid;
+    width: 900px;
+    height: 3000px;
+    margin: auto;
+    grid-template: repeat(30, 1fr) / repeat(12, 1fr);
+  }
+  img {
+    max-width: 100%;
+  }
+  /* set 1: repurposed living */
+  .a {
+    grid-area: 1 / 3 / 5 / 13;
+  }
+  
+  .b {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  
+  .c {
+    grid-area: 3 / 2 / 5 / 4;
+  }
+  
+  /* set 2: angles */
+  
+  .d {
+    grid-area: 8 / 1 / 12 / 10; 
+  }
+  
+  .e {
+    grid-area: 9 / 10 / 11 / 15; 
+  }
+  
+  .f {
+    grid-area: 10 / 10 / 11 / 15; 
+  }
+  
+  /* set 3: pattern play */
+  
+  .g {
+    grid-area: 14 / 5 / 17 / 15; 
+  }
+  
+  .h {
+    grid-area: 15 / 3 / 17 / 6; 
+  }
+  
+  .i {
+    grid-area: 16 / 3 / 17 / 5; 
+  }
+  
+  /* set 4: healing house */
+  
+  .j {
+    grid-area: 19 / 2 / 22 / 15; 
+  }
+  
+  .k {
+    grid-area: 21 / 11 / 22 / 15; 
+  }
+  
+  .l {
+    grid-area: 25 / 11 / 22 / 15; 
+  }
+  
+  /* set 5: curved perfection */
+  
+  .m {
+    grid-area: 24 / 5 / 30 / 20;
+  }
+  
+  .n {
+    grid-area: 26 / 4 / 30 / 20;
+  }
+  
+  .o {
+    grid-area: 27 / 4 / 30 / 20;
+  }
+  
+  .headLine {
+    margin-top: 5vh;
+    height: 20vh;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 120%;
+    margin-bottom: 10vh;
+  }
+  
+  .box {
+    font-family: 'Roboto Slab', serif;
+    font-size: 90%;
+  }
+  
+  .title {
+    font-weight: 700;
+    font-size: 180%;
+    font-family: 'Playfair Display', serif;
+    text-decoration: underline;
+  }
+  
+  /* media queries */ 
+  
+  @media (min-width: 1150px) {
+    #app {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .grid {
+  
+    }
+    
+    .title {
+      width: 65%;
+      font-size: 120%;
+    }
+  }
